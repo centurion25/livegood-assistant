@@ -1,51 +1,54 @@
 
 body {
-  font-family: sans-serif;
-  background: #f0f0f0;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding-bottom: 200px;
+  background: #f8f8f8;
+}
+header {
+  background: #047857;
+  color: white;
   padding: 2rem;
+  text-align: center;
 }
-#chat-widget {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
+.cta-button {
   background: white;
-  border: 2px solid #22c55e;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.header {
-  background: #16a34a;
-  color: white;
-  padding: 10px;
+  color: #047857;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
   font-weight: bold;
+  border-radius: 8px;
 }
-#chat-window {
-  padding: 10px;
-  height: 300px;
-  overflow-y: auto;
-  font-size: 14px;
+.features, .contact {
+  padding: 2rem;
+  background: white;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-#chat-form {
-  display: flex;
-  border-top: 1px solid #ccc;
+.features ul {
+  list-style: none;
+  padding: 0;
 }
-#chat-input {
-  flex: 1;
-  border: none;
-  padding: 10px;
+.features li {
+  margin: 0.5rem 0;
 }
-#chat-input:focus {
-  outline: none;
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
-button {
-  background: #16a34a;
+form button {
+  background: #047857;
   color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  padding: 10px 14px;
+  border-radius: 6px;
   cursor: pointer;
 }
