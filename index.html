@@ -3,12 +3,19 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>LiveGood Assistant</title>
-    <script defer src="app.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="chat-widget">
+      <div class="header">LiveGood Ассистент</div>
+      <div id="chat-window"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Напиши свой вопрос..." autocomplete="off" />
+        <button type="submit">Отпр.</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
